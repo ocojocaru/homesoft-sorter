@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Homesoft Sorter: automatic file organizer for Windows</title><meta name="description" content="Keeps your Downloads folder tidy by sorting files with rules you control. Preview first, undo anytime. Works offline. 14-day free trial.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><style>
+:root{--bg:#f6f7f9;--panel:#fff;--text:#12161d;--muted:#5f6b7f;--line:#e2e6ec;--brand:#3b5bdb;--brand-d:#2b3fa8;--accent:#f59f00;--on-brand:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0f131a;--panel:#171d27;--text:#e8ecf2;--muted:#9aa7bb;--line:#283242;--brand:#5c7cfa;--brand-d:#4a66e0;--accent:#fbbf24}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 "Segoe UI",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--brand)}img,svg{max-width:100%}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{display:flex;align-items:center;gap:12px;padding:16px 0}
+header.top .word{font-weight:800;letter-spacing:.18em;font-size:14px;color:var(--text);text-decoration:none}
+header.top nav{margin-left:auto;display:flex;gap:20px;font-size:15px}
+header.top nav a{color:var(--muted);text-decoration:none;white-space:nowrap}@media(max-width:520px){header.top nav a:first-child{display:none}}
+.btn{display:inline-block;background:var(--brand);color:var(--on-brand);padding:12px 22px;border-radius:9px;text-decoration:none;font-weight:600}
+.btn:hover{background:var(--brand-d)}.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.btn.accent{background:var(--accent);color:#1b1400}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.1;margin:.2em 0 .4em;letter-spacing:-.02em}
+h2{font-size:clamp(24px,3.4vw,34px);margin:0 0 .4em;letter-spacing:-.01em}
+.lead{font-size:20px;color:var(--muted);max-width:640px}
+.muted{color:var(--muted)}.small{font-size:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+section{padding:56px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+</style></head><body>
+<div class="wrap"><header class="top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="34" height="34"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4C6EF5"/><stop offset="1" stop-color="#364FC7"/></linearGradient></defs><rect width="512" height="512" rx="112" fill="url(#lg)"/><polygon points="256,92 420,236 388,236 388,412 124,412 124,236 92,236" fill="#FFFFFF"/><rect x="176" y="276" width="160" height="24" rx="12" fill="#F59F00"/><rect x="176" y="322" width="120" height="24" rx="12" fill="#3B5BDB"/><rect x="176" y="368" width="80" height="24" rx="12" fill="#3B5BDB"/></svg><a class="word" href="index.html">HOMESOFT</a>
+<nav><a href="index.html#how">How it works</a><a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a></nav></header></div>
+
+<div class="wrap">
+<section style="padding-top:32px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:36px;align-items:center">
+  <div>
+    <p class="muted small" style="margin:0;letter-spacing:.08em;text-transform:uppercase">For Windows 10 and 11</p>
+    <h1>Your Downloads folder, finally tidy.</h1>
+    <p class="lead">Homesoft Sorter watches the folders you choose and files everything where it belongs, by rules you control. See exactly what will move before it does. Undo any sort with one click.</p>
+    <p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+      <a class="btn" href="https://github.com/ocojocaru/homesoft-sorter/releases/latest">Download free for 14 days</a>
+      <a class="btn ghost" href="#pricing">See pricing</a></p>
+    <p class="muted small">No account. No cloud. Your files never leave your computer.</p>
+  </div>
+  <div class="card" aria-label="Example of files being sorted" style="font-family:Consolas,monospace;font-size:13px;line-height:1.9">
+    <div class="muted" style="font-family:'Segoe UI',system-ui,sans-serif;font-size:13px;margin-bottom:6px">Preview: 5 files would be sorted</div>
+    <div>holiday-042.jpg <span class="muted">&rarr;</span> <b>Images/2026/</b></div>
+    <div>invoice-0913.pdf <span class="muted">&rarr;</span> <b>Finance/Invoices/</b></div>
+    <div>setup-x64.exe <span class="muted">&rarr;</span> <b>Installers/</b></div>
+    <div>project-files.zip <span class="muted">&rarr;</span> <b>Archives/</b></div>
+    <div>podcast-ep12.mp3 <span class="muted">&rarr;</span> <b>Audio/</b></div>
+    <div style="margin-top:12px;display:flex;gap:8px"><span class="btn" style="padding:6px 14px;font-size:13px;font-family:'Segoe UI',sans-serif">Sort now</span><span class="btn ghost" style="padding:6px 14px;font-size:13px;font-family:'Segoe UI',sans-serif">Undo last sort</span></div>
+  </div></div>
+</section>
+
+<section id="how">
+  <h2>Set it once. Forget about it.</h2>
+  <div class="grid" style="margin-top:22px">
+    <div class="card"><h3 style="margin-top:0">1. Pick your folders</h3><p class="muted">Downloads, Desktop, a scans folder. Add as many as you like, with or without subfolders.</p></div>
+    <div class="card"><h3 style="margin-top:0">2. Choose your rules</h3><p class="muted">Start from sensible defaults or write your own: by extension, name, regex, size or age. Move or copy, into folders named by year, month or type.</p></div>
+    <div class="card"><h3 style="margin-top:0">3. Let it run</h3><p class="muted">It sorts quietly from the system tray, even after a restart. Every batch is logged and can be undone.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Built to be trusted with your files</h2>
+  <div class="grid" style="margin-top:22px">
+    <div class="card"><strong>Preview before anything moves</strong><p class="muted small">See every file and its destination first.</p></div>
+    <div class="card"><strong>Never overwrites</strong><p class="muted small">Name clashes become "name (1).ext". Nothing is silently replaced.</p></div>
+    <div class="card"><strong>One-click undo</strong><p class="muted small">Moves go back where they were. Undo keeps working even after your trial ends.</p></div>
+    <div class="card"><strong>Skips downloads in progress</strong><p class="muted small">Partial and brand-new files are left alone until they are finished.</p></div>
+    <div class="card"><strong>Leaves apps and projects alone</strong><p class="muted small">Folders that look like a program or code project are never taken apart.</p></div>
+    <div class="card"><strong>Private by design</strong><p class="muted small">Runs entirely on your PC. No cloud, no tracking, no accounts.</p></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="card" style="max-width:520px;margin:0 auto;text-align:center;padding:34px">
+    <h2>One price. Yours to keep.</h2>
+    <p style="font-size:44px;font-weight:800;margin:.1em 0">$19 <span class="muted" style="font-size:16px;font-weight:400">one-time</span></p>
+    <p class="muted">Includes all updates for version 1. Use it on up to [2] of your own PCs.</p>
+    <p><a class="btn accent" href="https://YOUR-STORE.lemonsqueezy.com/buy/YOUR-PRODUCT-ID">Buy Homesoft Sorter</a></p>
+    <p class="muted small">Try it free for 14 days first. 14-day money-back guarantee. Secure checkout by Lemon Squeezy; your key arrives by email straight away.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <h2>Questions</h2>
+  <div class="grid" style="margin-top:22px">
+    <div class="card"><strong>Does it upload my files or scan them online?</strong><p class="muted small">No. Sorting happens entirely on your computer. The app only contacts the internet to activate or re-check a license, to protect the free trial, and to look for updates. See the <a href="privacy.html">privacy page</a>.</p></div>
+    <div class="card"><strong>What happens when the trial ends?</strong><p class="muted small">Sorting pauses. Preview and Undo keep working, and nothing you already sorted is touched. Enter a license key to continue.</p></div>
+    <div class="card"><strong>Can it break my programs or projects?</strong><p class="muted small">Recursive sorting is off by default, and even when on, folders containing programs or code projects are skipped. You can always undo the last sort.</p></div>
+    <div class="card"><strong>Does it work offline?</strong><p class="muted small">Yes. A license keeps working for 45 days between online checks, so occasional offline use is fine.</p></div>
+    <div class="card"><strong>Can I move it to a new PC?</strong><p class="muted small">Yes. Use "Deactivate this computer" in the License tab, then activate on the new one.</p></div>
+    <div class="card"><strong>Mac or Linux?</strong><p class="muted small">Windows only for now.</p></div>
+  </div>
+</section>
+</div>
+<footer><div class="wrap">&copy; <span id="y"></span> Homesoft Solutions &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms &amp; refunds</a> &middot; <a href="mailto:support@YOUR-DOMAIN.com">support@YOUR-DOMAIN.com</a></div></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script></body></html>
